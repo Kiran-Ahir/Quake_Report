@@ -30,6 +30,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         View listItemView = convertView;
+
         if (listItemView == null){
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.earthquake_list_item, parent, false);
